@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+# TikiTag
 
-## Project info
+TikiTag is a mobile-first event sharing platform that lets users create events, invite guests, collect RSVPs, and unlock a shared photo gallery exclusively for attendees—on the day of the event. Designed to preserve authenticity and connection, only those who RSVP can contribute and view moments from the occasion.
 
-**URL**: https://lovable.dev/projects/0534117f-d2e3-40da-abe1-bf9441907e2a
+## Features
 
-## How can I edit this code?
+### Core Functionality
 
-There are several ways of editing your application.
+- Event Creation
+  - Add title, description, date, location, and optional event banner
+- Email Invitations
+  - Invite attendees directly via email with real-time RSVP tracking
+- RSVP Page
+  - Clean RSVP interface with optional guest comment ("Excited to join!")
+- D-Day Unlock
+  - On the event day, the gallery feature becomes accessible to RSVP'd guests
+- Photo Gallery
+  - Upload photos
+  - View photos shared by other attendees
+  - React using preset emoji-style responses (like, funny, wow, celebrate)
+  - Optional guest comments on images
+- Memory Capsule
+  - Automatically generated post-event memory grid for attendees
+- Event Reminders
+  - Automated email or SMS sent to RSVP'd guests one day before the event
 
-**Use Lovable**
+### Host & Privacy Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0534117f-d2e3-40da-abe1-bf9441907e2a) and start prompting.
+- Event host can:
+  - Remove inappropriate photos
+  - Close photo uploads after a set date
+  - Control visibility of the memory capsule
+- Guests are notified during RSVP that photo upload/viewing unlocks only on the event date
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
 
-**Use your preferred IDE**
+- Frontend: React / Next.js or Vue (recommended)
+- Styling: Tailwind CSS
+- Backend: Node.js + Express or Supabase (optional)
+- Database: PostgreSQL or Firebase Firestore
+- Email Service: SendGrid, Resend, or Mailgun
+- File Storage: Firebase Storage, Supabase Storage, or AWS S3
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+   git clone https://github.com/hasali-coder/tikitag.git
 
-Follow these steps:
+2. Navigate to the project directory:
+   cd tikitag
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Install dependencies:
+   npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. Configure your .env file with keys for:
+   - Email service (e.g., SendGrid API)
+   - Firebase/Supabase credentials
+   - Event base URL and API keys
 
-# Step 3: Install the necessary dependencies.
-npm i
+5. Run the development server:
+   npm run dev
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Folder Structure
 
-**Edit a file directly in GitHub**
+/src
+  /components
+  /pages
+  /styles
+  /services
+  /utils
+/public
+.env.example
+README.md
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Roadmap
 
-**Use GitHub Codespaces**
+- Guest profile avatars
+- Memory Capsule download feature
+- Shareable capsule page with access tokens
+- Custom themes per event
+- Advanced admin moderation tools
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## License
 
-## What technologies are used for this project?
+This project is licensed under the MIT License.
 
-This project is built with:
+## Author
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0534117f-d2e3-40da-abe1-bf9441907e2a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Built by [Muange]. For inquiries or collaboration, feel free to reach out on [your email] or visit [your portfolio link].
